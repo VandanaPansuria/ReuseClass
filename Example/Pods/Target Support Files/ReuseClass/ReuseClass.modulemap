@@ -1,0 +1,6 @@
+framework module ReuseClass {
+  umbrella header "ReuseClass-umbrella.h"
+
+  export *
+  module * { export * }
+}

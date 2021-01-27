@@ -1,0 +1,16 @@
+PODS:
+  - ReuseClass (0.1.0)
+
+DEPENDENCIES:
+  - ReuseClass (from `../`)
+
+EXTERNAL SOURCES:
+  ReuseClass:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ReuseClass: 0015837d5c7c6fd03ca39a11f7edba437d1a4ab5
+
+PODFILE CHECKSUM: ea8513595a5f396039a7a1c219b101b56197121c
+
+COCOAPODS: 1.10.1
