@@ -1,6 +1,6 @@
 //
 //  Fonts.swift
-//  Vcustomclass
+//  ReuseClass
 //
 //  Created by MacV on 27/01/21.
 //

@@ -1,8 +1,8 @@
 //
 //  AchievementProgressbar.swift
-//  CategoryComponent
+//  ReuseClass
 //
-//  Created by MacV on 25/01/21.
+//  Created by MacV on 27/01/21.
 //
 
 import Foundation

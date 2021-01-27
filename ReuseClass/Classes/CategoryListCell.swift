@@ -1,6 +1,6 @@
 //
 //  CategoryListCell.swift
-//  CategoryComponent
+//  ReuseClass
 //
 //  Created by MacV on 22/01/21.
 //

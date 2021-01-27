@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ReuseClass'
-  s.version          = '1.2'
+  s.version          = '1.3'
   s.summary          = 'ReuseClass - Custom pod creation for iOS'
 
 # This description is used to generate tags and improve search results.
@@ -34,7 +34,7 @@ Reusable two UI components & add them to existing UI
   s.source_files = 'ReuseClass/Classes/**/*'
   
    s.resource_bundles = {
-     'ReuseClass' => ['ReuseClass/Assets/*.png','ReuseClass/Assets/*.xcassets','ReuseClass/Resources/*.png','ReuseClass/Resources/*.xib','ReuseClass/Resources/*.otf']
+     'ReuseClass' => ['ReuseClass/Assets/*.png','ReuseClass/Assets/*.xcassets','ReuseClass/Resources/*.png','ReuseClass/Classes/*.xib','ReuseClass/Classes/*.otf']
    }
    s.resources = "ReuseClass/**/*.{png,json}"
   # s.public_header_files = 'Pod/Classes/**/*.h'
