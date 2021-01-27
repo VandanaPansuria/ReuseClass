@@ -16,15 +16,25 @@ struct CatList {
     var youPercent: String
     var monthlyOverSpendDollar: String
 }
+struct CategoryList {
+    var emoji: String
+    var name: String
+    var max: String
+    var value: String
+    var outlineColor: String
+    var barColor: String
+    var backgroundColor: String
+    var textColor: String
+}
 
 class ViewController: UIViewController, ReuseClassdelegate {
     var objCatList = [CatList]()
+    var objCategoryList = [CategoryList]()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
     //Category setup
-    
     @IBOutlet weak var customTableView: ReuseClass! {
         didSet {
             customTableView.delegate = self
@@ -49,6 +59,25 @@ class ViewController: UIViewController, ReuseClassdelegate {
     func onCardClosedClick(_ Vcustomclass: ReuseClass) {
         print("Card close")
     }
+    
+    //Achievements
+    @IBOutlet weak var achivementTableView: AchievementProgressbar! {
+        didSet {
+            achivementTableView.vCategoryItem = vAchivementCategory
+            //achivementTableView.tableCellHeight = 50 //set height of row, default height is 50
+        }
+    }
+    lazy var vAchivementCategory: [AchivementItem] = {
+        setUpachievementCategory()
+        let objvAchivementCategory = objCategoryList.map({AchivementItem.init(itemname: $0.name, emoji: $0.emoji, max: $0.max, value: $0.value, outlineColor: $0.outlineColor, barColor: $0.barColor, backgroundColor: $0.backgroundColor, textColor: $0.textColor)})
+        return objvAchivementCategory
+    }()
+    func setUpachievementCategory () {
+        let Itemone = CategoryList(emoji: "https://dl.dropboxusercontent.com/s/zrw9oemgnp14afi/Balance%20%240.png", name: "Watch 30 ads + 100", max: "70", value: "35", outlineColor: "#2A3137", barColor:"#FDAEB6", backgroundColor: "#040D14", textColor: "#FFFFFF")
+       let Itemtwo = CategoryList(emoji: "https://dl.dropboxusercontent.com/s/zrw9oemgnp14afi/Balance%20%240.png", name: "Scan 20 Reciept + 200", max: "70", value: "30", outlineColor: "#2A3137", barColor:"#FDAEB6", backgroundColor: "#040D14", textColor: "#FFFFFF")
+        objCategoryList.append(Itemone)
+        objCategoryList.append(Itemtwo)
+   }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

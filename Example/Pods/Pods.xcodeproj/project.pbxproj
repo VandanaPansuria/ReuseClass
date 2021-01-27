@@ -12,6 +12,9 @@
 		2A4755A4776601A5A3EFE72903F49651 /* ReuseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C51DCD8CA2EA42398DA7F6469E59607 /* ReuseClass.swift */; };
 		40FC982ADAC46CD3E529F91BCA902FA8 /* Pods-ReuseClass_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05C760B6C4BCEE9A789BF1C515E1B5C3 /* Pods-ReuseClass_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		62EBF4BCB9CE3DE72FD019ED4F23B5A1 /* Pods-ReuseClass_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7199D00811247C47895FC9E11A0A8B3F /* Pods-ReuseClass_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E32C77A25C17E4500B4BF5E /* EarnPointsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E32C77725C17E4400B4BF5E /* EarnPointsCell.xib */; };
+		8E32C77B25C17E4500B4BF5E /* AchievementProgressbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E32C77825C17E4500B4BF5E /* AchievementProgressbar.swift */; };
+		8E32C77C25C17E4500B4BF5E /* EarnPointsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E32C77925C17E4500B4BF5E /* EarnPointsCell.swift */; };
 		8EC5359F25C175B300972984 /* CategoryListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EC5359B25C175B300972984 /* CategoryListCell.xib */; };
 		8EC535A025C175B300972984 /* CategoryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC5359C25C175B300972984 /* CategoryListCell.swift */; };
 		8EC535A125C175B300972984 /* Gopher-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EC5359D25C175B300972984 /* Gopher-Bold.otf */; };
@@ -65,6 +68,9 @@
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7ADF7CFB1D38C6F8D6A534368B4372D3 /* ReuseClass-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReuseClass-prefix.pch"; sourceTree = "<group>"; };
 		8C1DF4E72B88D91273C5600944DBD33D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8E32C77725C17E4400B4BF5E /* EarnPointsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EarnPointsCell.xib; path = ReuseClass/Classes/EarnPointsCell.xib; sourceTree = "<group>"; };
+		8E32C77825C17E4500B4BF5E /* AchievementProgressbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AchievementProgressbar.swift; path = ReuseClass/Classes/AchievementProgressbar.swift; sourceTree = "<group>"; };
+		8E32C77925C17E4500B4BF5E /* EarnPointsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EarnPointsCell.swift; path = ReuseClass/Classes/EarnPointsCell.swift; sourceTree = "<group>"; };
 		8EC5359B25C175B300972984 /* CategoryListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CategoryListCell.xib; path = ReuseClass/Classes/CategoryListCell.xib; sourceTree = "<group>"; };
 		8EC5359C25C175B300972984 /* CategoryListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryListCell.swift; path = ReuseClass/Classes/CategoryListCell.swift; sourceTree = "<group>"; };
 		8EC5359D25C175B300972984 /* Gopher-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gopher-Bold.otf"; path = "ReuseClass/Classes/Gopher-Bold.otf"; sourceTree = "<group>"; };
@@ -136,6 +142,9 @@
 		11F32B4EB67354B3DD9E09BBDEB38A53 /* ReuseClass */ = {
 			isa = PBXGroup;
 			children = (
+				8E32C77825C17E4500B4BF5E /* AchievementProgressbar.swift */,
+				8E32C77925C17E4500B4BF5E /* EarnPointsCell.swift */,
+				8E32C77725C17E4400B4BF5E /* EarnPointsCell.xib */,
 				8EC535AF25C1764900972984 /* AsyncImage.swift */,
 				8EC535B025C1764900972984 /* Fonts.swift */,
 				8EC535A825C175E900972984 /* dismis.png */,
@@ -389,6 +398,7 @@
 				8EC535AB25C175E900972984 /* dismis.png in Resources */,
 				8EC535A225C175B300972984 /* Gopher-Regular.otf in Resources */,
 				8EC535AA25C175E900972984 /* placeholder.png in Resources */,
+				8E32C77A25C17E4500B4BF5E /* EarnPointsCell.xib in Resources */,
 				8EC535A125C175B300972984 /* Gopher-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,7 +428,9 @@
 			files = (
 				8EC535B125C1764A00972984 /* AsyncImage.swift in Sources */,
 				8EC535B225C1764A00972984 /* Fonts.swift in Sources */,
+				8E32C77B25C17E4500B4BF5E /* AchievementProgressbar.swift in Sources */,
 				8EC535A025C175B300972984 /* CategoryListCell.swift in Sources */,
+				8E32C77C25C17E4500B4BF5E /* EarnPointsCell.swift in Sources */,
 				2A4755A4776601A5A3EFE72903F49651 /* ReuseClass.swift in Sources */,
 				14DE8D2FAB21E2ED2858A87855AF2D6F /* ReuseClass-dummy.m in Sources */,
 			);
