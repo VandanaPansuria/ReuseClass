@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ReuseClass'
-  s.version          = '1.3'
+  s.version          = '1.4'
   s.summary          = 'ReuseClass - Custom pod creation for iOS'
 
 # This description is used to generate tags and improve search results.
