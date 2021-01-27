@@ -89,7 +89,7 @@ public class ReuseClass: UIControl {
 }
 extension ReuseClass: UITableViewDataSource, UITableViewDelegate {
     
-    private func numberOfSections(in tableView: UITableView) -> Int {
+    public func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -105,7 +105,7 @@ extension ReuseClass: UITableViewDataSource, UITableViewDelegate {
         cell.emojiurl = vCategoryItem[indexPath.row].emoji
         return cell
     }
-    private func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return tableCellHeight
     }
 }
