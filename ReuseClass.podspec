@@ -36,7 +36,7 @@ Reusable two UI components & add them to existing UI
    s.resource_bundles = {
      'ReuseClass' => ['ReuseClass/Assets/*.png','ReuseClass/Assets/*.xcassets','ReuseClass/Resources/*.png','ReuseClass/Classes/*.xib','ReuseClass/Classes/*.otf']
    }
-   s.resources = "ReuseClass/**/*.{png,json,xib,otf,xcassets}"
+   s.resources = "ReuseClass/**/*.{png,json}"
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
