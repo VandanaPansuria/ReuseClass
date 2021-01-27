@@ -9,7 +9,7 @@ import Foundation
 public final class Fonts {
   static func podFont(name: String, size: CGFloat) -> UIFont {
     if let font = UIFont(name: name, size: size) {return font}
-    let bundle = Bundle(for: Fonts.self)
+    let bundle = Bundle(for: ReuseClass.self)
     let url = bundle.url(forResource: name, withExtension: "otf")!
     let data = NSData(contentsOf: url)!
     let provider = CGDataProvider(data: data)!
