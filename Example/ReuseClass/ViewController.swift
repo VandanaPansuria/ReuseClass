@@ -27,13 +27,13 @@ struct CategoryList {
     var textColor: String
 }
 
-class ViewController: UIViewController, ReuseClassdelegate {
+class ViewController: UIViewController {
     var objCatList = [CatList]()
     var objCategoryList = [CategoryList]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
+    
     //Category setup
     @IBOutlet weak var customTableView: ReuseClass! {
         didSet {
@@ -56,9 +56,6 @@ class ViewController: UIViewController, ReuseClassdelegate {
        objCatList.append(Itemtwo)
        objCatList.append(Itemthree)
    }
-    func onCardClosedClick(_ Vcustomclass: ReuseClass) {
-        print("Card close")
-    }
     
     //Achievements
     @IBOutlet weak var achivementTableView: AchievementProgressbar! {
@@ -85,3 +82,9 @@ class ViewController: UIViewController, ReuseClassdelegate {
 
 }
 
+//MARK:- ReuseClassdelegate
+extension ViewController : ReuseClassdelegate{
+    func onCardClosedClick(_ Vcustomclass: ReuseClass) {
+        print("Card close")
+    }
+}
