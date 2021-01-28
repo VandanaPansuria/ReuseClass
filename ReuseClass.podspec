@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ReuseClass'
-  s.version          = '1.7'
+  s.version          = '2.0'
   s.summary          = 'ReuseClass - Custom pod creation for iOS'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-Reusable two UI components & add them to existing UI
+Reusable two custom UI components & how to use them to existing UI
                        DESC
 
   s.homepage         = 'https://github.com/vandanapansuria/ReuseClass'

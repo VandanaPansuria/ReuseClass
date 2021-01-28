@@ -2,7 +2,7 @@
 //  CategoryListCell.swift
 //  ReuseClass
 //
-//  Created by MacV on 22/01/21.
+//  Created by MacV on 27/01/21.
 //
 
 import UIKit
