@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="3k8-jA-YZw">
             <objects>
-                <viewController id="FCN-Bl-gyd" customClass="ViewController" customModule="Vcustomclass_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FCN-Bl-gyd" customClass="ViewController" customModule="ReuseClass_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="72e-AT-OGd"/>
                         <viewControllerLayoutGuide type="bottom" id="aFa-RM-kv6"/>
@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cKH-bp-aoU" customClass="AchievementProgressbar" customModule="ReuseClass">
-                                <rect key="frame" x="5" y="90.5" width="365" height="214"/>
+                                <rect key="frame" x="5" y="85.5" width="365" height="214"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="214" id="YcZ-aA-8Oz"/>
@@ -34,13 +34,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spend Category List &amp; Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXu-2n-syF">
-                                <rect key="frame" x="20" y="324.5" width="212" height="20.5"/>
+                                <rect key="frame" x="20" y="319.5" width="212" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rEe-ab-1bx" customClass="ReuseClass" customModule="ReuseClass">
-                                <rect key="frame" x="5" y="350" width="365" height="312"/>
+                                <rect key="frame" x="5" y="355" width="365" height="307"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
@@ -51,9 +51,9 @@
                             <constraint firstAttribute="trailing" secondItem="rEe-ab-1bx" secondAttribute="trailing" constant="5" id="Djq-W4-9U2"/>
                             <constraint firstItem="XXu-2n-syF" firstAttribute="leading" secondItem="0wl-LG-cZH" secondAttribute="leading" constant="20" id="ELB-UV-s6w"/>
                             <constraint firstItem="XXu-2n-syF" firstAttribute="top" secondItem="cKH-bp-aoU" secondAttribute="bottom" constant="20" id="Ebn-MW-sxy"/>
-                            <constraint firstItem="rEe-ab-1bx" firstAttribute="top" secondItem="XXu-2n-syF" secondAttribute="bottom" constant="5" id="P0f-RJ-8M6"/>
+                            <constraint firstItem="rEe-ab-1bx" firstAttribute="top" secondItem="XXu-2n-syF" secondAttribute="bottom" constant="15" id="P0f-RJ-8M6"/>
                             <constraint firstItem="WY1-nB-2eN" firstAttribute="top" secondItem="72e-AT-OGd" secondAttribute="bottom" constant="50" id="VDW-Ic-jXD"/>
-                            <constraint firstItem="cKH-bp-aoU" firstAttribute="top" secondItem="WY1-nB-2eN" secondAttribute="bottom" constant="20" id="d9e-uT-JFi"/>
+                            <constraint firstItem="cKH-bp-aoU" firstAttribute="top" secondItem="WY1-nB-2eN" secondAttribute="bottom" constant="15" id="d9e-uT-JFi"/>
                             <constraint firstItem="rEe-ab-1bx" firstAttribute="leading" secondItem="0wl-LG-cZH" secondAttribute="leading" constant="5" id="jLO-c6-PJV"/>
                             <constraint firstItem="WY1-nB-2eN" firstAttribute="leading" secondItem="0wl-LG-cZH" secondAttribute="leading" constant="20" id="p5n-Qg-hTy"/>
                             <constraint firstItem="aFa-RM-kv6" firstAttribute="top" secondItem="rEe-ab-1bx" secondAttribute="bottom" constant="5" id="vnc-od-KWd"/>

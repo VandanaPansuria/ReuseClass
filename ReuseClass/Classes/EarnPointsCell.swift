@@ -24,8 +24,6 @@ class EarnPointsCell: UITableViewCell {
         outlineColor = #colorLiteral(red: 0.1647058824, green: 0.1921568627, blue: 0.2156862745, alpha: 1)
         barColor = #colorLiteral(red: 0.9921568627, green: 0.6823529412, blue: 0.7137254902, alpha: 1)
         textcolor = .white
-        lblItem.font = Fonts.podFont(name: "Gopher-Bold", size: 16)
-       
     }
     override func layoutSubviews() {
         super.layoutSubviews()

@@ -35,6 +35,7 @@ public class ReuseClass: UIControl {
         customTableView.register(nib, forCellReuseIdentifier: "CategoryListCell")
         self.addSubview(customTableView)
         self.customTableView.tableFooterView = UIView()
+        VCustomFonts.loadFonts()
     }
     public override func awakeFromNib() {
         super.awakeFromNib()

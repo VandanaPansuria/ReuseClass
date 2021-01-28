@@ -27,6 +27,7 @@ public class AchievementProgressbar: UIControl {
         customTableView.register(nib, forCellReuseIdentifier: "EarnPointsCell")
         self.addSubview(customTableView)
         self.customTableView.tableFooterView = UIView()
+        VCustomFonts.loadFonts()
     }
     public override func awakeFromNib() {
         super.awakeFromNib()
