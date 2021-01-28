@@ -104,6 +104,7 @@ extension ReuseClass: UITableViewDataSource, UITableViewDelegate {
         cell.lblAvg.text = vCategoryItem[indexPath.row].avgPercent
         cell.lblYou.text = vCategoryItem[indexPath.row].youPercent
         cell.emojiurl = vCategoryItem[indexPath.row].emoji
+        cell.selectionStyle = .none
         return cell
     }
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

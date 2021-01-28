@@ -77,6 +77,7 @@ extension AchievementProgressbar: UITableViewDataSource, UITableViewDelegate {
         cell.setprogressValue = Float(vCategoryItem[indexPath.row].value ?? "0")!
         cell.setmaxprogressvalue = Float(vCategoryItem[indexPath.row].max ?? "0")!
         cell.progressConstraintHeight = tableCellHeight
+        cell.selectionStyle = .none
         return cell
     }
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
